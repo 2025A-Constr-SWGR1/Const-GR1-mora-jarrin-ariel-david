@@ -1,0 +1,59 @@
+:root {
+  --ancho-boton: 60px;
+  --alto-boton: 60px;
+  --tamano-texto-boton: 1.2rem;
+  --ancho-pantalla: 100%;
+  --tamano-texto-pantalla: 1.5rem;
+  --color-borde: #ccc;
+  --radio-borde: 10px;
+  --espaciado: 1rem;
+  --gap-botones: 0.5rem;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: var(--espaciado);
+}
+
+.calculadora {
+  display: inline-block;
+  border: 2px solid var(--color-borde);
+  border-radius: var(--radio-borde);
+  padding: var(--espaciado);
+}
+
+.calculadora__pantalla {
+  width: var(--ancho-pantalla);
+  font-size: var(--tamano-texto-pantalla);
+  text-align: right;
+  margin-bottom: var(--espaciado);
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.calculadora__botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap-botones);
+}
+
+.calculadora__boton {
+  width: var(--ancho-boton);
+  height: var(--alto-boton);
+  font-size: var(--tamano-texto-boton);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Modificadores BEM para botones especiales */
+.calculadora__boton--resultado {
+  font-weight: bold;
+}
+
+.calculadora__boton--limpiar {
+  background-color: #f44336;
+  color: white;
+}

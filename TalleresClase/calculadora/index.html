@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculadora">
+    <input
+      id="pantalla"
+      type="text"
+      readonly
+      class="calculadora__pantalla"
+    />
+    <div class="calculadora__botones">
+      <button
+        class="calculadora__boton"
+        onclick="presionar('7')"
+      >7</button>
+      <button class="calculadora__boton" onclick="presionar('8')">8</button>
+      <button class="calculadora__boton" onclick="presionar('9')">9</button>
+      <button class="calculadora__boton" onclick="presionar('/')">/</button>
+
+      <button class="calculadora__boton" onclick="presionar('4')">4</button>
+      <button class="calculadora__boton" onclick="presionar('5')">5</button>
+      <button class="calculadora__boton" onclick="presionar('6')">6</button>
+      <button class="calculadora__boton" onclick="presionar('*')">*</button>
+
+      <button class="calculadora__boton" onclick="presionar('1')">1</button>
+      <button class="calculadora__boton" onclick="presionar('2')">2</button>
+      <button class="calculadora__boton" onclick="presionar('3')">3</button>
+      <button class="calculadora__boton" onclick="presionar('-')">-</button>
+
+      <button class="calculadora__boton" onclick="presionar('0')">0</button>
+      <button class="calculadora__boton" onclick="presionar('.')">.</button>
+      <button
+        class="calculadora__boton calculadora__boton--resultado"
+        onclick="calcular()"
+      >=</button>
+      <button class="calculadora__boton" onclick="presionar('+')">+</button>
+      <button
+        class="calculadora__boton calculadora__boton--limpiar"
+        onclick="limpiarPantalla()"
+      >C</button>
+    </div>
+  </div>
+
+  <script src="./js/calculadora.js"></script>
+</body>
+</html>
