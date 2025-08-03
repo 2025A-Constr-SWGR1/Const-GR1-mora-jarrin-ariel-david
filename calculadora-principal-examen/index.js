@@ -1,7 +1,7 @@
-const suma = require('2025a-swgr1-mjad-suma');
-const resta = require('2025a-swgr1-mjad-resta');
-const multiplicacion = require('2025a-swgr1-mjad-multiplicacion');
-const division = require('2025a-swgr1-mjad-division');
+const suma = require('2025a-swgr1-fanu-suma');
+const resta = require('2025a-swgr1-fanu-resta');
+const multiplicacion = require('2025a-swgr1-admj-multiplicacion');
+const division = require('2025a-swgr1-admj-division');
 
 console.log('suma(2,1):', suma.suma(2,1)); 
 console.log('resta(3,2):', resta.resta(3,2)); 
