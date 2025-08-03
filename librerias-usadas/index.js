@@ -1,4 +1,4 @@
-const paqueteSuma = require('2025a-swgr1-mjad-suma');
+const paqueteSuma = require('2025a-swgr1-fanu-suma');
 
 const respuesta = paqueteSuma.suma(1, 2);
 
